@@ -6,6 +6,7 @@ markdown_extensions:
     - markdown.extensions.fenced_code
 nav:
     - O notatkach: index.md
+    - Powtórzenie z dyskretnej: mdl/md.md
     - Kopce:
           - Kopiec minimalny/maksymalny: binary-heap/binary-heap.md
           - Kopiec min-max: min-max-heap/min-max-heap.md
