@@ -1,0 +1,13 @@
+# .readthedocs.yml
+version: 2
+
+# Build settings
+mkdocs:
+    configuration: mkdocs.yml
+
+# Build system settings
+build:
+    os: ubuntu-20.04
+    tools:
+        python: "3.9"
+# Optional: add any extra configuration or commands you need here
