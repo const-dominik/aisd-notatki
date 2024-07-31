@@ -22,8 +22,8 @@ sprowadzają się do znalezienia podzbioru krawędzi, są to algorytmy zachłann
 1. algorytm Kruskala  
    W każdym kroku algorytmu do zbioru E' dodajemy krawędź z najmniejszą wagą, o ile dodanie jej nie powoduje powstania cyklu. Kończymy kiedy G = (V, E') jest drzewem rozpinającym. Tak stworzony G jest MST.
 
-2. algorytm Prima
+2. algorytm Prima  
    Wybieramy jakiś wierzchołek v i dodajemy do E' najlżejszą krawędź incydentną z v. Następnie rozważamy pozostałe krawędzie, wybieramy minimalną z tych, które są incydentne z którąś z krawędzi z E', o ile drugi jej koniec nie znajduje się także w E'.
 
-3. algorytm Boruvki
+3. algorytm Boruvki  
    Dla każdego wierzchołka z V, do E' dodajemy najlżejszą krawędź incydentną do tego wierzchołka. W ten sposób otrzymujemy graf, który nie musi być spójny. Jeżeli jest spójny, to mamy MST. Jeśli nie, to spójne składowe możemy potraktować jako superwierzchołek (tj. z składowej robimy pojedynczy wierzchołek, który ma incydentne wszystkie krawędzie, które są incydentne z wierzchołkami należącymi do tej spójnej składowej). Dla tych superwierzchołków powtarzamy krok 1 algorytmu, tj. do E' dodajemy najlżejsze krawędzie incydentne z tymi superwierzchołkami.
