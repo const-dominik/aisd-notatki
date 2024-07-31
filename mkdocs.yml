@@ -7,4 +7,5 @@ markdown_extensions:
 nav:
     - O notatkach: index.md
     - Kopce:
-          - Kopiec binarny: binary-heap/binary-heap.md
+          - Kopiec minimalny/maksymalny: binary-heap/binary-heap.md
+          - Kopiec min-max: min-max-heap/min-max-heap.md
