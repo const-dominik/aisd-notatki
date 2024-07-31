@@ -1,0 +1,10 @@
+site_name: Algorytmy i struktury danych
+theme: readthedocs
+markdown_extensions:
+    - markdown.extensions.codehilite:
+          guess_lang: false
+    - markdown.extensions.fenced_code
+nav:
+    - O notatkach: index.md
+    - Kopce:
+          - Kopiec binarny: binary-heap/binary-heap.md
