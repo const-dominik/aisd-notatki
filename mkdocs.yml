@@ -7,6 +7,9 @@ markdown_extensions:
 nav:
     - O notatkach: index.md
     - Powtórzenie z dyskretnej: mdl/md.md
-    - Kopce:
-          - Kopiec minimalny/maksymalny: binary-heap/binary-heap.md
-          - Kopiec min-max: min-max-heap/min-max-heap.md
+    - Struktury danych:
+          - Kopce:
+                - Kopiec minimalny/maksymalny: binary-heap/binary-heap.md
+                - Kopiec min-max: min-max-heap/min-max-heap.md
+    - Algorytmy:
+          - zachłanne: greedy/greedy-algos.md
