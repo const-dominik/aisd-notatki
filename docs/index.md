@@ -1,6 +1,6 @@
 # Algorytmy i struktury danych
 
-Hej. To moje notatki z AiSDu. Docelowo każdy z tematów omawianych na wykładzie powinien się tu znaleźć, wraz z implementacją. Długofalowo, fajnie gdyby pojawiły się także rozwiązania zadań powiązanych z tematami.
+Hej. To moje notatki z AiSDu. Docelowo każdy z tematów omawianych na wykładzie powinien się tu znaleźć. Długofalowo, fajnie gdyby pojawiły się także rozwiązania zadań powiązanych z tematami.
 
 Inne źródła, z których korzystam przy tworzeniu tych notatek:
 
