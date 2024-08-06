@@ -27,3 +27,19 @@ sprowadzają się do znalezienia podzbioru krawędzi, są to algorytmy zachłann
 
 3. algorytm Boruvki  
    Dla każdego wierzchołka z V, do E' dodajemy najlżejszą krawędź incydentną do tego wierzchołka. W ten sposób otrzymujemy graf, który nie musi być spójny. Jeżeli jest spójny, to mamy MST. Jeśli nie, to spójne składowe możemy potraktować jako superwierzchołek (tj. z składowej robimy pojedynczy wierzchołek, który ma incydentne wszystkie krawędzie, które są incydentne z wierzchołkami należącymi do tej spójnej składowej). Dla tych superwierzchołków powtarzamy krok 1 algorytmu, tj. do E' dodajemy najlżejsze krawędzie incydentne z tymi superwierzchołkami.
+
+# Liczba Catalana
+
+Wzór jawny:  
+!!c_n = \frac{1}{n+1} {2n \choose n} = \frac{(2n!)}{(n+1)!n!}!!
+
+Wzór rekurencyjny:
+!!c_0 = 1; c_n = c_0 \cdot c\_{n-1} + c_1 \cdot c{n-2} + ... + c\_{n-2} \cdot c_1 + c\_{n-1} \cdot c_0 = \sum\_{i=0}^{n-1} c_i \cdot c\_{n-1-i}!!
+
+Co opisuje ta liczba? Na przykład liczbę poprawnych rozmieszczeń nawiasów. Na AiSD chyba wystarczy wiedzieć, że jak coś ma złożoność liczby Catalana, to nie jest kolorowo.
+
+# Słowniczek
+
+Drzewo - acykliczny graf spójny  
+Las - acykliczny graf, którego spójnymi składowymi są drzewa  
+Drzewo rozpinające - drzewo, które zawiera wszystkie wierzchołki grafu, a krawędzie są podzbiorem krawędzi grafu
