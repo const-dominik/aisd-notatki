@@ -14,7 +14,7 @@ Prosta sprawa - dzielimy tablicę na pół, sortujemy połówki i scalamy (O(n))
 
 # Quicksort
 
-todo jak bede ogarnial sortowania ogolnie
+Informacje o tym algorytmie znajdują się w sekcji związanej z algorytmami sortującymi.
 
 # Mnożenie bardzo dużych liczb
 
