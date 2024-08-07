@@ -20,3 +20,5 @@ nav:
           - zachłanne: greedy/greedy-algos.md
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md
           - dynamiczne: dynamic/dynamic.md
+    - Inne (ale też ważne):
+          - dolne granice: bounds/bottom-bounds.md
