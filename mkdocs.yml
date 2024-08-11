@@ -21,5 +21,6 @@ nav:
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md
           - dynamiczne: dynamic/dynamic.md
           - sortujące: sorting/sorting.md
+          - selekcja: selection/selection.md
     - Inne (ale też ważne):
           - dolne granice: bounds/bottom-bounds.md
