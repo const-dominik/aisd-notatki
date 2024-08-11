@@ -1,6 +1,6 @@
 # Opis
 
-Ta notatka podsumowuje najpopularniejsze algorytmy sortujące, ze szczególnym pochyleniem na algorytmy, nad którymi Loryś szczególnie się pochylił prowadząc wykład.
+Ta notatka podsumowuje najpopularniejsze algorytmy sortujące, ze szczególnym pochyleniem nad algorytmami, nad którymi pan Loryś szczególnie się pochylił prowadząc wykład.
 
 # Algorytmy !!O(n^2)!!
 
@@ -19,6 +19,8 @@ def bubble_sort(tab):
     return tab
 
 ```
+
+Moja ocena algorytmu: !!9/10!!. Prosty i fajny. -1 punkcik za złożoność.
 
 ### Sortowanie przez wstawianie (insertion sort)
 
@@ -39,6 +41,8 @@ def insertion_sort(tab):
     return tab
 ```
 
+Moja ocena algorytmu: !!6/10!!. Jest trochę bardziej skomplikowany niż bubble sort, a tak samo głupi (!!O(n^2)!!). Lepiej użyć bubble sorta.
+
 ### Sortowanie przez selekcję (selection sort)
 
 Polega na przechodzeniu po tablicy i znajdowaniu minimum (lub maximum, ale zakładam że bierzemy sobie minimum), które po zakończeniu przejścia wstawiamy na początek tablicy. Wtedy zawsze początku mamy już posortowane elementy i skupiamy się na nieposortowanej części.
@@ -52,6 +56,8 @@ def selection_sort(tab):
 
     return tab
 ```
+
+Moja ocena algorytmu: !!8/10!!. Mniej skomplikowany niż insertion sort, ale nadal nie tak fajny jak bubble sort, mimo tego że to praktycznie ten sam algorytm.
 
 # Algorytmy !!O(n \log n)!!
 
@@ -72,6 +78,8 @@ Szybki algorytm sortujący przy użyciu kopca, O(n log n). Na chłopski rozum - 
             sorted_list.append(self.extract_min())
         return sorted_list
 ```
+
+Moja ocena algorytmu: !!9/10!!. Ale tylko zakładając, że mamy już zaimplementowany kopiec, inaczej ocena drastycznie spada. +1 punkcik za złożoność.
 
 ### Sortowanie przez scalanie (merge sort)
 
@@ -124,6 +132,8 @@ def merge_sort(arr, left, right):
 ```
 
 Dzielenie tablicy to !!\log n !!, scalamy w !!n!!, wychodzimy !!O(n \log n)!!
+
+Moja ocena algorytmu: !!8/10!!. O ile idea jest prosta, to trzeba się trochę pierniczyć z tym mergem, ale za to spoko złożoność.
 
 ### Sortowanie szybkie (quicksort)
 
@@ -197,9 +207,79 @@ def quicksort(tab):
     quicksort2(tab, 0, len(tab)-1)
 ```
 
+Moja ocena algorytmu: !! 4/10 !!. Przesadnie skomplikowany, trzeba wierzyć na słowo że działa szybko bo dowód jest nietrywialny.
+
 #### Analiza złożoności
 
-Dla uproszczenia zakładamy, że elementy tablicy są różne.
-!!n = r - p + 1!! - liczba elementów w !!A[p \dots r]!!. Definiujemy też funkcję:
-$$ rank(x, A[p \dots r]) = | \\{j \colon p \leq j \leq r \text{ i } A[j] \leq x\\}|$$
-Funkcja ta mówi nam, ile elementów w !!A[p \dots r]!! jest mniejszych bądź równych !!x!!.
+!!O(n \log n)!!
+[filmik](https://www.youtube.com/watch?v=UHGRbzqHlN8)  
+to co jest w notatkach KLo niestety nie kumam ;(
+
+# Algorytmy o lepszej złożoności
+
+Nie istnieją. Chyba, że to co chcemy posortować spełnia jakieś dodatkowe założenia. Zatem takie algorytmy są, jednak nie osiągną lepszej złożoności dla jakichś losowych danych o których nic nie wiemy.
+
+# Sortowanie przez zliczanie (counting sort)
+
+Dostajemy dane !!A[1 \dots n]!!, liczby te są z przedziału !!<1 \dots k>!!. Idea jest taka, że po prostu robimy sobie pomocniczą tablicę !!pom!! o długości !!k!! i dla każdego elementu !!A[i]!!, !!pom[A[i]]!!++. Po tym mamy tablicę z informacją, ile mamy których elementów. Teraz musimy zrobić sztuczkę magiczkę: robimy sobie w tej tablicy pomocniczej sumy prefixowe, tj. Przykład:
+
+A = [4, 1, 1, 2, 3, 2, 4, 4]  
+pom = [2, 2, 1, 3]  
+pom po posumowaniu: [2, 4, 5, 8]
+ta tablica oznacza teraz - jedynki są do 2 indeksu włącznie, później są dwójki do 4 indeksu włącznie, później do 5 są trójki, a dalej do ósmego są czwórki. W ten sposób wiemy, na których indeksach tablicy wynikowej umieścić nasze liczby.
+
+Odtworzenie posortowanej tablicy: tworzymy tablicę B n-elemntową (tyle co w A) i lecimy po tablicy A. Pierwszy element to 4, więc na indeksie pom[4] odczytujemy, że powinien się znaleźć na indeksie ósmym. Zatem B[8] = 4. Ale też musimy powiedzieć naszemu algorytmowi, że kolejna czwórka będzie indeks wcześniej (na B[7], zakładając że będzie, a w naszym przypadku będzie - gdyby nie było, to i tak nie zaglądamy już do tej komórki i nic sobie nie popsujemy). Zatem robimy pom[4]-- i lecimy dalej po tablicy A, aż dojdziemy do końca. B jest posortowaną tablica.
+
+```python
+def counting_sort(tab, k):
+    # zakładam, że indeksy będą od 0 do k-1
+    pom = [0]*k
+    for i in range(len(tab)):
+        pom[tab[i]] += 1
+    for i in range(1, k):
+        pom[i] += pom[i-1]
+
+    B = [0]*len(tab)
+
+    for i in range(len(tab)):
+        B[pom[tab[i]]-1] = tab[i]
+        pom[tab[i]] -= 1
+
+    return B
+```
+
+Złożoność tego czegoś to takie O z kreską w środku od !!n + k!!. ;)
+
+Moja ocena algorytmu: !! 10/10 !!. Fajny algorytm. Brak wad.
+
+# Sortowanie kubełkowe (bucket sort)
+
+Służy do sortowania liczb z przedziału !! [ 0, 1)!!. Dzielimy ten przedział na n równych odcinków (kubełki), umieszczamy liczby w odpowiadających im kubełkach, sortujemy poszczególne kubełki i je łączymy. Plus jest taki, że jak jest to w postaci list wiązanych to to połączenie po prostu polega na podpięciu ostatniego elementu !!i!!-tego kubełka z pierwszym elementem !!i+1!!, chyba. W środku kubełki sortujemy np. insertion sortem. Podobno to ma oczekiwaną złożoność !!O(n)!!, ale ja tego nie kupuję.
+
+Moja ocena algorytmu !!1/10!!. Jakiś pseudoalgorytm na kiju i niby ma taką złożoność, zresztą kto potrzebuje sortowania liczb z przedziału !![0, 1)!!. Szanujmy się i nie mówmy o tym algorytmie, nawet nie wrzucam implementacji.
+
+# Sortowanie leksykograficzne (radix sort)
+
+Porównanie dwóch ciągów (stringów): robimy to tak, że jeśli mamy słowa !!s!! i !!t!! o długości !!p!! i !!q!!, bez straty ogólności zakładam !!p \leq q!!, to:  
+!!s \leq t!! wtedy, gdy pierwsza (od lewej) liczba w !!s!! jest mniejsza od liczby na tej pozycji w !!t!! (np. "101", "102"), albo kiedy !!s!! jest prefiksem !!t!! i !!t!! jest dłuższe (np. "100" i "1001").
+
+### ciągi jednakowej długości
+
+radix-sort polega na zastosowaniu counting sorta dla każdego indeksu ciągu, tzn:
+
+```python
+def radix_sort(A):
+    for i in range (d, 0, -1):
+        counting_sort(A, i) # sortuje po i-tym indeksie
+```
+
+Złożoność to !!O(d(n+k))!!, gdzie d to długość ciągu, a n+k to counting sort.
+
+### ciągi o różnych długościach
+
+Możemy zrobić to co w ciągach jednakowej długości, tylko dodać padding przy słowach krótszych od najdłuższego, jako paddingu używamy jakiegoś chara który na pewno nie wystąpi w słowie i traktujemy go jako minimalna wartość (takie 0 w liczbach).
+
+Inny sposób z notatek KLo:
+![alt text](images/radix.png)
+
+TODO: zreferować to i ogarnąć lepiej, ale już nie chce mi sie tego sortowania ;(
