@@ -16,6 +16,8 @@ nav:
           - Kopce:
                 - Kopiec minimalny/maksymalny: binary-heap/binary-heap.md
                 - Kopiec min-max: min-max-heap/min-max-heap.md
+          - Drzewa:
+                - AVL: trees/avl.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md
