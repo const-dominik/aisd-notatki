@@ -18,6 +18,7 @@ nav:
                 - Kopiec min-max: min-max-heap/min-max-heap.md
           - Drzewa:
                 - AVL: trees/avl.md
+                - B: trees/b-trees.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md
