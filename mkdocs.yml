@@ -14,9 +14,10 @@ nav:
     - Kolejność: order.md
     - Powtórzenie z dyskretnej: mdl/md.md
     - Struktury danych:
-          - Kopce:
-                - Kopiec minimalny/maksymalny: binary-heap/binary-heap.md
-                - Kopiec min-max: min-max-heap/min-max-heap.md
+          - Kopiec:
+                - minimalny/maksymalny: heaps/binary/binary-heap.md
+                - min-max: heaps/min-max/min-max-heap.md
+                - dwumianowy: heaps/binomial/binomial-heap.md
           - Drzewa:
                 - AVL: trees/avl.md
                 - B: trees/b-trees.md
