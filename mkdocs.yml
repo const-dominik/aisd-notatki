@@ -11,6 +11,7 @@ extra_javascript:
 
 nav:
     - O notatkach: index.md
+    - Kolejność: order.md
     - Powtórzenie z dyskretnej: mdl/md.md
     - Struktury danych:
           - Kopce:
@@ -19,6 +20,7 @@ nav:
           - Drzewa:
                 - AVL: trees/avl.md
                 - B: trees/b-trees.md
+                - czerwono-czarne: trees/red-black.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md

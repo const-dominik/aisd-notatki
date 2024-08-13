@@ -4,7 +4,7 @@ Do przechowywania małych słowników, tj. struktury danych umożliwiającej pam
 
 Nie wiem od czego jest to B w B-drzewach, ale możemy założyć, że jest to drzewo **B**. dobre dla operacji dyskowych :)
 
-Przed kontynuacją, warto obejrzeć sobie fajny filmik, żeby mieć ogólne pojęcie czym są B-drzewa, tym samym znacznie ułatwiając zrozumienie dalszej części notatki: [filmik](https://www.youtube.com/watch?v=K1a2Bk8NrYQ).
+**Przed kontynuacją, warto obejrzeć sobie fajny filmik, żeby mieć ogólne pojęcie czym są B-drzewa, tym samym znacznie!! ułatwiając zrozumienie dalszej części notatki: [filmik](https://www.youtube.com/watch?v=K1a2Bk8NrYQ).**
 
 Warto wiedzieć, a nawet trzeba:
 
