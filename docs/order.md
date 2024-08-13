@@ -12,3 +12,4 @@ Kolejność notatek w porównaniu z notatkami KLo:
 10. [B drzewa](https://aisd-notatki.readthedocs.io/en/latest/trees/b-trees/)
 11. [Drzewa czerwono-czarne](https://aisd-notatki.readthedocs.io/en/latest/trees/red-black/)
 12. [Kopce dwumianowe](https://aisd-notatki.readthedocs.io/en/latest/heaps/binomial/binomial-heap/)
+13. [Kopce Fibonacciego](https://aisd-notatki.readthedocs.io/en/latest/heaps/fibonacci/fibonacci-heaps/)

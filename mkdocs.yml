@@ -18,6 +18,7 @@ nav:
                 - minimalny/maksymalny: heaps/binary/binary-heap.md
                 - min-max: heaps/min-max/min-max-heap.md
                 - dwumianowy: heaps/binomial/binomial-heap.md
+                - Fibonacciego: heaps/fibonacci/fibonacci-heaps.md
           - Drzewa:
                 - AVL: trees/avl.md
                 - B: trees/b-trees.md
