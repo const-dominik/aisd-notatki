@@ -14,15 +14,16 @@ nav:
     - Kolejność: order.md
     - Powtórzenie z dyskretnej: mdl/md.md
     - Struktury danych:
-          - Kopiec:
+          - kopiec:
                 - minimalny/maksymalny: heaps/binary/binary-heap.md
                 - min-max: heaps/min-max/min-max-heap.md
                 - dwumianowy: heaps/binomial/binomial-heap.md
                 - Fibonacciego: heaps/fibonacci/fibonacci-heaps.md
-          - Drzewa:
+          - drzewo:
                 - AVL: trees/avl.md
                 - B: trees/b-trees.md
                 - czerwono-czarne: trees/red-black.md
+                - splay: trees/splay.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md

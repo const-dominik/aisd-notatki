@@ -6,7 +6,7 @@ Inne źródła, z których korzystam przy tworzeniu tych notatek:
 
 -   [AiSD Dla Opornych](https://github.com/Ph0enixKM/AiSD-Dla-Opornych)
 -   [Cormen](https://lubimyczytac.pl/ksiazka/146862/wprowadzenie-do-algorytmow)
--   skrypt KLo
+-   skrypt KLo (Krzysztof Loryś)
 
 Repozytorium: [aisd notatki](https://github.com/const-dominik/aisd-notatki)
 
