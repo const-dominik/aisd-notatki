@@ -25,6 +25,7 @@ nav:
                 - czerwono-czarne: trees/red-black.md
                 - splay: trees/splay.md
                 - union-find: trees/union-find.md
+          - słownik statyczny: static-dict/static-dict.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md
@@ -33,4 +34,4 @@ nav:
           - selekcja: selection/selection.md
     - Inne (ale też ważne):
           - dolne granice: bounds/bottom-bounds.md
-          - haszujące: hashing/hashing.md
+          - haszowanie: hashing/hashing.md
