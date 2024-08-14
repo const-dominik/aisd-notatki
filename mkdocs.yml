@@ -24,6 +24,7 @@ nav:
                 - B: trees/b-trees.md
                 - czerwono-czarne: trees/red-black.md
                 - splay: trees/splay.md
+                - union-find: trees/union-find.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md
           - dziel i zwyciężaj: divide-and-conquer/dac-algos.md
