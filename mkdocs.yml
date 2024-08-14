@@ -33,3 +33,4 @@ nav:
           - selekcja: selection/selection.md
     - Inne (ale też ważne):
           - dolne granice: bounds/bottom-bounds.md
+          - haszujące: hashing/hashing.md

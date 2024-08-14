@@ -123,7 +123,7 @@ def Union(i, j, k):
         i, j = j, i
     large = Root[j]
     small = Root[i]
-    small.faather = large
+    small.father = large
     large.size += small.size
     large.name = k
     Root[k] = large

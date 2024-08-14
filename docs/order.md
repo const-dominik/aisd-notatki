@@ -15,3 +15,4 @@ Kolejność notatek w porównaniu z notatkami KLo:
 13. [Kopce Fibonacciego](https://aisd-notatki.readthedocs.io/en/latest/heaps/fibonacci/fibonacci-heaps/)
 14. [Drzewa splay](https://aisd-notatki.readthedocs.io/en/latest/trees/splay/)
 15. [Union Find](https://aisd-notatki.readthedocs.io/en/latest/trees/union-find/)
+16. [Haszowanie](https://aisd-notatki.readthedocs.io/en/latest/hashing/hashing/)
