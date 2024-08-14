@@ -77,6 +77,7 @@ def delete(i, S):
 ```python
 def find(i, S):
     splay(S, i)
-    ## zwracamy, czy i znajduje się teraz w root - jeśli tak, to znaleźliśmy i wartość jest w root, jak nie jest to znaczy że nie ma
+    # zwracamy, czy i znajduje się teraz w root - jeśli tak,
+    #  to znaleźliśmy i wartość jest w root, jak nie jest to znaczy że nie ma
     return S.root == i
 ```
