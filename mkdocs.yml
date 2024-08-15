@@ -32,6 +32,7 @@ nav:
           - dynamiczne: dynamic/dynamic.md
           - sortujące: sorting/sorting.md
           - selekcja: selection/selection.md
+          - wyszukujące wzorzec: string-searching/string-searching.md
     - Inne (ale też ważne):
           - dolne granice: bounds/bottom-bounds.md
           - haszowanie: hashing/hashing.md
