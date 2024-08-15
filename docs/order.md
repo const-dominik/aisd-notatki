@@ -1,4 +1,4 @@
-Kolejność notatek w porównaniu z notatkami KLo:
+Kolejność notatek mniej więcej w porównaniu z notatkami KLo:
 
 1. [Kopce 1](https://aisd-notatki.readthedocs.io/en/latest/heaps/binary/binary-heap/)
 2. [Kopce 2](https://aisd-notatki.readthedocs.io/en/latest/heaps/min-max/min-max-heap/)
@@ -18,3 +18,4 @@ Kolejność notatek w porównaniu z notatkami KLo:
 16. [Haszowanie](https://aisd-notatki.readthedocs.io/en/latest/hashing/hashing/)
 17. [Słownik statyczny](https://aisd-notatki.readthedocs.io/en/latest/static-dict/static-dict/)
 18. [Wyszukiwanie wzorców](https://aisd-notatki.readthedocs.io/en/latest/string-searching/string-searching/)
+19. [Drzewce](https://aisd-notatki.readthedocs.io/en/latest/trees/treeps/)

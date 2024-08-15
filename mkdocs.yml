@@ -25,6 +25,7 @@ nav:
                 - czerwono-czarne: trees/red-black.md
                 - splay: trees/splay.md
                 - union-find: trees/union-find.md
+                - drzewiec: trees/treaps.md
           - słownik statyczny: static-dict/static-dict.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md
