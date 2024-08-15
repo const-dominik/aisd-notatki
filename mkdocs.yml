@@ -26,6 +26,7 @@ nav:
                 - splay: trees/splay.md
                 - union-find: trees/union-find.md
                 - drzewiec: trees/treaps.md
+                - van Emde Boas: trees/emde-boas.md
           - słownik statyczny: static-dict/static-dict.md
     - Algorytmy:
           - zachłanne: greedy/greedy-algos.md

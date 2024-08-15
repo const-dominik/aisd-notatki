@@ -19,3 +19,4 @@ Kolejność notatek mniej więcej w porównaniu z notatkami KLo:
 17. [Słownik statyczny](https://aisd-notatki.readthedocs.io/en/latest/static-dict/static-dict/)
 18. [Wyszukiwanie wzorców](https://aisd-notatki.readthedocs.io/en/latest/string-searching/string-searching/)
 19. [Drzewce](https://aisd-notatki.readthedocs.io/en/latest/trees/treeps/)
+20. [Drzewa van Emde Boas](https://aisd-notatki.readthedocs.io/en/latest/trees/emde-boas/)

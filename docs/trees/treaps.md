@@ -2,7 +2,7 @@
 
 o_O taki kopco-BST. Ma jakieś dwie wartości: klucz i priorytet. Po kluczach jest drzewem BST, po priorytetach kopcem. Nie jest to drzewo zbalansowane, jednak losowanie priorytetów daje nam dużą szansę na to, że takie będzie. Nie wiem kto i po co wymyślił taką strukturę, ale przynajmniej zrozumienie jej jest trywialne.
 
-Ciekawostka: treaps (drzewce) to połączenie tree i heap. Po polsku, byłoby to coś w stylu binaropiec drzewopiec poszukiwaniopiec.
+Ciekawostka: treaps (drzewce) to połączenie tree i heap. Stąd też po polsku drzewiec - drzewo + kopiec.
 
 # Operacje
 
