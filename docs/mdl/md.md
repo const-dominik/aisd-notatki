@@ -38,8 +38,18 @@ Wzór rekurencyjny:
 
 Co opisuje ta liczba? Na przykład liczbę poprawnych rozmieszczeń nawiasów. Na AiSD chyba wystarczy wiedzieć, że jak coś ma złożoność liczby Catalana, to nie jest kolorowo.
 
+# Algorytm Floyda-Warshalla
+
+Znajduje najkrótsze ścieżki pomiędzy wszystkimi wierzchołkami w grafie.
+Korzysta z faktu, że jeśli ścieżka pomiędzy dwoma wierzchołkami prowadzi przez wierzchołek !!u!!, to jest ona połączeniem najkrótszych scieżek pomiędzy pierwszym wierzchołkiem a !!u!! i !!u!! do drugiego wierzchołka.
+
+Zaczynamy od zwykłej macierzy, gdzie M[v1,v2] = 0 jeśli v1=v2, jeżeli istnieje między nimi krawędź to wstawiamy jej wagę, a jeśli nie istnieje to dajemy nieskończoność. Następnie dynamicznie wypełniamy naszą macierz, zakładając że przechodzimy przez !!i!!-ty wierzchołek. Np. w macierzy !!A^1!!, szukając najkrótszej drogi z 2 do 3, sprawdzimy czy krótsza jest obecna droga, czy może przejście z 2 do 1, a z 1 do 3. Powtarzamy aż skończą nam się wierzchołki.
+
+Filmik: [Abdul Bari](https://www.youtube.com/watch?v=oNI0rf2P9gE)
+
 # Słowniczek
 
 Drzewo - acykliczny graf spójny  
 Las - acykliczny graf, którego spójnymi składowymi są drzewa  
 Drzewo rozpinające - drzewo, które zawiera wszystkie wierzchołki grafu, a krawędzie są podzbiorem krawędzi grafu
+Digraf - graf skierowany

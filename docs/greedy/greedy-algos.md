@@ -1,6 +1,6 @@
 # Opis
 
-Za pomocą takich algorytmów możemy rozwiązujemy zazwyczaj zadania optymalizacyjne. Przykładowo, mamy jakiś skończony zbiór X, a odpowiedzią jest jakiś podzbiór zbioru X.
+Za pomocą takich algorytmów rozwiązujemy zazwyczaj zadania optymalizacyjne. Przykładowo, mamy jakiś skończony zbiór X, a odpowiedzią jest jakiś podzbiór zbioru X.
 
 Algorytmy zachłanne to na przykład [algorytmy wyznaczające MST](https://aisd-notatki.readthedocs.io/en/latest/mdl/md/).
 

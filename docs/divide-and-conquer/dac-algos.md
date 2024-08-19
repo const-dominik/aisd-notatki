@@ -1,6 +1,6 @@
 # Opis
 
-To są takie algorytmy, że dzielą problem na mniejszy aż staje się trywialny do rozwiązania. Na przykład quick sort czy merge sort, nad którymi się tutaj pochylę.
+To są takie algorytmy, że dzielą problem na mniejszy aż staje się trywialny do rozwiązania. Na przykład quick sort czy merge sort, które zostaną szerzej opisane w sekcji z sortowaniem.
 
 # Złożoność
 

@@ -27,10 +27,6 @@ Wiadomo, że minimalny element jest w korzeniu L. Usuwamy minimalny i wstawiamy 
 
 Tutaj przechowujemy w jednym kopcu zarówno kopiec minimalny i maksymalny.
 
-![](images/min-max-heap-2.png)
+![alt text](images/min-max-heap-2.png)
 
-<div style="text-align: center;">
-<sup>Obrazek z notatek <a href="https://github.com/Ph0enixKM/AiSD-Dla-Opornych/blob/master/1%20Kopce%20Binarne.pdf" target="_blank">AiSD dla opornych</a></sup>
-</div>
-
-Po więcej informacji na jego temat odsyłam do AiSD dla opornych, link w adnotacji do obrazka. Może dodam coś więcej na jego temat jak się okaże, że się przyda na egzaminie.
+Na piętrach parzystych (tj. 0, 2..) będziemy mieć wartości minimalne, a na piętrach nieparzystych (1, 3, 5...) wartości maksymalne. Zakładamy, że korzeń znajduje się na piętrze 0. W roocie nadal mamy wartość najmniejszą. Wartość największa to jeden z wierzchołków na 1 poziomie. Taki kopiec nadal zachowuje własność kopca - jeżeli jesteśmy we wierzchołku !!x!! na poziomie parzystym (minimalnym), to !!x.key!! jest mniejszy od wszystkich wartości w poddrzewie którego korzeniem jest !!x!!. Jeżeli jesteśmy we wierzchołku !!y!! na poziomie nieparzystym (maksymalnym), to !!y.key!! jest największą wartością w poddrzewie którego korzeniem jest !!y!!.

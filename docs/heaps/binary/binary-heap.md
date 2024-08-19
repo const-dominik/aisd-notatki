@@ -43,7 +43,7 @@ move_down: Przesuwa element w dół drzewa, zamieniając go z mniejszym z jego d
 
 ### Heapify:
 
-heapify_slow: Buduje kopiec dodając i przesuwając każdy element w górę (wolniejsze, ale prostsze podejście).
+heapify_slow: Buduje kopiec dodając i przesuwając każdy element w górę (wolniejsze, ale prostsze podejście).  
 heapify_fast: Buduje kopiec od dołu (szybsze podejście).
 
 # Heap sort

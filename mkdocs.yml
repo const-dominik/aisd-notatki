@@ -39,4 +39,5 @@ nav:
           - dolne granice: bounds/bottom-bounds.md
           - haszowanie: hashing/hashing.md
     - Listy zadań:
-          - 0: listy/0.md
+          - lista 0: listy/0.md
+          - lista 1: listy/1.md

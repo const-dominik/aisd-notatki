@@ -3,7 +3,7 @@
 Mamy problem - jest nim wybór k-tego co do wielkości elementu w zbiorze.
 Mamy więc daną tablicę T, w której mamy !!n!! elementów. Dostajemy też liczbę !!k \in [1, n]!!. Bez zmniejszania ogólności zakładamy, że elementy tablicy T są różne. W naszych algorytm będziemy stosować tylko porównania.
 
-No więc mamy sobie zbiorek i mamy odpowiedzieć na pytanie: jaka liczba w tym zbiorze k-ta co do wielkości? Np. druga, trzecia, czwarta?
+No więc mamy sobie zbiorek i mamy odpowiedzieć na pytanie: jaka liczba w tym zbiorze jest k-ta co do wielkości? Np. druga, trzecia, czwarta?
 
 # Podejście pierwsze - dla ludzi normalnych
 
