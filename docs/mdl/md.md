@@ -51,5 +51,5 @@ Filmik: [Abdul Bari](https://www.youtube.com/watch?v=oNI0rf2P9gE)
 
 Drzewo - acykliczny graf spójny  
 Las - acykliczny graf, którego spójnymi składowymi są drzewa  
-Drzewo rozpinające - drzewo, które zawiera wszystkie wierzchołki grafu, a krawędzie są podzbiorem krawędzi grafu
+Drzewo rozpinające - drzewo, które zawiera wszystkie wierzchołki grafu, a krawędzie są podzbiorem krawędzi grafu  
 Digraf - graf skierowany
