@@ -95,7 +95,7 @@ O(!!n \cdot m!!)
 
 ## Wyznaczanie optymalnej kolejności mnożenia macierzy
 
-Okazuje się, że jak mamy n macierzy i chcemy je wymnożyć, to jakieś kolejności są lepsze od innych. Mnożenie macierzy jest łączne, możemy zacząć od obojętnie którego mnożenia i dostaniemy ten sam wynik. Zakładamy, że liczba kolumn !!M_i!! jest równa liczbie wierzy !!M\_{i+1}!!. No i jest taka własność, że jak mnożenie macierzy jest określone, to zachodzi !!(m \times n)(n \times k) = (m \times k)!!. I teraz jak mamy macierze o wymiarach !!d \times 1, 1 \times d, 1 \times d!!, to jak wymnożymy najpierw dwie pierwsze to dostaniemy !! d \times d !!, a jak drugą i trzecią to dostaniemy !! 1 \times 1 !!. Zatem w pierwszym przypadku mamy !!d^2!! w pierwszym mnożeniu i !!d^2!! w drugim, a w drugim przypadku mamy !!d!! za każdym razem. Trzeba wierzyć na słowo, nie znam żadnych algorytmów mnożenia macierzy, ale tak napisał pan Loryś.
+Okazuje się, że jak mamy n macierzy i chcemy je wymnożyć, to jakieś kolejności są lepsze od innych. Zakładamy, że liczba kolumn !!M_i!! jest równa liczbie wierzy !!M\_{i+1}!!. No i jest taka własność, że jak mnożenie macierzy jest określone, to zachodzi !!(m \times n)(n \times k) = (m \times k)!!. I teraz jak mamy macierze o wymiarach !!d \times 1, 1 \times d, 1 \times d!!, to jak wymnożymy najpierw dwie pierwsze to dostaniemy !! d \times d !!, a jak drugą i trzecią to dostaniemy !! 1 \times 1 !!. Zatem w pierwszym przypadku mamy !!d^2!! w pierwszym mnożeniu i !!d^2!! w drugim, a w drugim przypadku mamy !!d!! za każdym razem. Trzeba wierzyć na słowo, nie znam żadnych algorytmów mnożenia macierzy, ale tak napisał pan Loryś.
 
 Założenie:  
 Koszt pomnożenia macierzy o wymiarach !!a \times b!! i !!b \times c!! wynosi !!abc!!.
