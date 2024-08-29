@@ -8,6 +8,7 @@ Inne źródła, z których korzystam przy tworzeniu tych notatek:
 -   [Cormen](https://lubimyczytac.pl/ksiazka/146862/wprowadzenie-do-algorytmow)
 -   skrypt Krzysztofa Lorysia
 -   [rozwiązania Kamila Matuszewskiego](https://github.com/Arsenicro/University/)
+-   [teoria ithrasila](https://github.com/ithrasil/AiSD/)
 
 Repozytorium: [aisd notatki](https://github.com/const-dominik/aisd-notatki)
 
